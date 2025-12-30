@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>F1</title>
+</head>
+
+<body>
+    <div class="container-semaforo">
+        <div class="luz"></div>
+        <div class="luz"></div>
+        <div class="luz"></div>
+        <div class="luz"></div>
+        <div class="luz"></div>
+    </div>
+
+    <div class="logo-f1">
+        <img src="./img/f1logo/f1-logo.png" alt="logo da formula 1">
+        <!-- <h3>Scroll</h3> -->
+        <br>
+        <div class="scroll-hint">
+            <img src="./icons/scroll.svg" alt="">
+        </div>
+    </div>
+
+    <div class="container-scuderias">
+        <div class="team alpine" data-index="0" title="Alpine"></div>
+        <div class="team aston"  data-index="1" title="Aston Martin"></div>
+        <div class="team ferrari" data-index="2" title="Ferrari"></div>
+        <div class="team mclaren" data-index="3" title="McLaren"></div>
+        <div class="team mercedes" data-index="4" title="Mercedes"></div>
+        <div class="team haas" data-index="5" title="Haas"></div>
+        <div class="team racingbulls" data-index="6" title="Racing Bulls"></div>
+        <div class="team redbull" data-index="7" title="Red Bull"></div>
+        <div class="team williams" data-index="8" title="Williams"></div>
+        <div class="team sauber" data-index="9" title="Sauber"></div>
+    </div>
+
+    <div class="car-slider-overlay">
+        <div class="close-btn" onclick="fecharSlider()">&times;</div>
+
+        <button class="nav-btn prev-btn" onclick="mudarSlide(-1)">
+            <img src="icons/prev.svg" alt="">
+        </button>
+        <button class="nav-btn next-btn" onclick="mudarSlide(1)">
+            <img src="icons/next.svg" alt="">
+        </button>
+
+        <div class="slider-track">
+
+            <div class="slide slide-alpine active">
+                <h1 class="team-name-big">Alpine</h1>
+                <img src="img/logo-scuderias/alpine.png"
+                    class="team-shield-big" alt="Escudo Alpine">
+                <div class="car-image-container">
+                    <img src="img/cars/alpine.png"
+                        class="car-image" alt="Carro Alpine">
+                </div>
+            </div>
+
+            <div class="slide slide-aston active">
+                <h1 class="team-name-big">Aston Martin</h1>
+                <!-- <img src="img/logo-scuderias/a.png"
+                    class="team-shield-big" alt="Escudo Aston"> -->
+                <div class="car-image-container">
+                    <img src="img/cars/aston.png"
+                        class="car-image" alt="Carro Aston">
+                </div>
+            </div>
+
+            <div class="slide slide-ferrari active">
+                <h1 class="team-name-big">Ferrari</h1>
+                <img src="img/logo-scuderias/ferrari.png"
+                    class="team-shield-big" alt="Escudo Ferrari">
+                <div class="car-image-container">
+                    <img src="img/cars/ferrari.png"
+                        class="car-image" alt="Carro Ferrari">
+                </div>
+            </div>
+
+            <div class="slide slide-mclaren">
+                <h1 class="team-name-big">Mclaren</h1>
+                <img src="img/logo-scuderias/mclaren.png"
+                    class="team-shield-big" alt="Escudo Mclaren">
+                <div class="car-image-container">
+                    <img src="img/cars/mclaren.png"
+                        class="car-image" alt="Carro Mclaren">
+                </div>
+            </div>
+
+            <div class="slide slide-mercedes" >
+                <h1 class="team-name-big">Mercedes</h1>
+                <img src="img/logo-scuderias/mercedes.png"
+                    class="team-shield-big" alt="Escudo Mercedes">
+                <div class="car-image-container">
+                    <img src="img/cars/mercedes.png"
+                        class="car-image" alt="Carro Mercedes">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
